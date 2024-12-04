@@ -1,0 +1,43 @@
+<html>
+      <head>
+        <title> Sugestão de filmes </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href=""/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        
+
+    </head>
+    <body>
+        <div class="text-center mt-4 container col-sm-10 col-md-6">   
+            <h1>Entrar</h1>
+            <form action="usuario-controller" method="post" class="validar mt-4" novalidate>
+                
+                <input type="hidden" name="pagina" value="login">
+                
+                <div class="form-floating mt-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="email@email.com">                   
+                </div>
+                
+                <div class="form-floating mt-3">
+                    <input type="password" id="senha" name="senha" class="form-control" placeholder="12345">
+                    <label for="senha">Senha</label>
+                </div>
+                
+                <div class="mt-3">
+                    <input type="submit" value="Entrar" class="btn btn-primary btn-lg">
+                </div>
+                
+            </form>
+            <div class="footer mt-4">
+            Não possui cadastro? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+
+        </div>
+    </body>
+</html>

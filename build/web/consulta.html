@@ -1,0 +1,77 @@
+<!DOCTYPEhtml>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Consulta</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    
+    
+</head>
+<body>
+    
+    <h1 class="text-center mt-4">Consulta de Usuários</h1>
+    <main class="text-center mt-4 container col-sm-10 col-md-6 shadow-lg">
+    <table class="table table-striped ">
+            <thead>
+                <tr>
+                    
+                    <th > Cod </th>
+                    <th> Nome </th>
+                    <th> Email </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Usuario X</td>
+                    <td> Fulano</td>
+                    <td> fulano@fulano</td>
+                    <td>
+                        <a href="exclui-usuario.jsp?id=<%= u.getId() %>" title="Excluir <%= u.getNome()%>"> 🗑️ </a>
+                    </td>
+                    
+                    <td>
+                        <a href="atualiza-usuario.jsp?id=<%= u.getId() %>" title="Atualizar <%= u.getNome()%>"> 📝️️ </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Usuario Y</td>
+                    <td> Fulano</td>
+                    <td> fulano@fulano</td>
+                    <td>
+                        <a href="exclui-usuario.jsp?id=<%= u.getId() %>" title="Excluir <%= u.getNome()%>"> 🗑️ </a>
+                    </td>
+                    
+                    <td>
+                        <a href="atualiza-usuario.jsp?id=<%= u.getId() %>" title="Atualizar <%= u.getNome()%>"> 📝️️ </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Usuario Z</td>
+                    <td> Fulano</td>
+                    <td> fulano@fulano</td>
+                    <td>
+                        <a href="exclui-usuario.jsp?id=<%= u.getId() %>" title="Excluir <%= u.getNome()%>"> 🗑️ </a>
+                    </td>
+                    
+                    <td>
+                        <a href="atualiza-usuario.jsp?id=<%= u.getId() %>" title="Atualizar <%= u.getNome()%>"> 📝️️ </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Usuario A</td>
+                    <td> Fulano</td>
+                    <td> fulano@fulano</td>
+                    <td>
+                        <a href="exclui-usuario.jsp?id=<%= u.getId() %>" title="Excluir <%= u.getNome()%>"> 🗑️ </a>
+                    </td>
+                    
+                    <td>
+                        <a href="atualiza-usuario.jsp?id=<%= u.getId() %>" title="Atualizar <%= u.getNome()%>"> 📝️️ </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
