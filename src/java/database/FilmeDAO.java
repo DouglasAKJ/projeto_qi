@@ -30,8 +30,10 @@ public class FilmeDAO {
             Filme filme = new Filme();
             
             filme.setTitulo(res.getString("titulo") );
+            filme.setNota(res.getString("nota"));
             filme.setSinopse(res.getString("sinopse") );
-            filme.setAutor(res.getString("autor") );
+            filme.setCategorias(res.getString("categorias"));
+            filme.setAutor(res.getString("diretor") );
             
             list.add(filme);
         }
@@ -39,18 +41,6 @@ public class FilmeDAO {
         prep.close();
         return list;
     }
-    
-     public void setNewFilme(Filme filme) throws SQLException {
-        String query = "insert into filmes(titulo, sinopse, autor) values(?, ?, ?)";
-        
-        PreparedStatement prep = conn.prepareStatement(query);
-        
-        prep.setString(1, filme.getTitulo());
-        prep.setString(2, filme.getSinopse());
-        prep.setString(3, filme.getAutor());
-        
-        prep.execute();
-        prep.close();
-    }
+
     
 }

@@ -7,8 +7,9 @@ public class Filme {
     private String titulo;
     private String nota;
     private String sinopse;
-    private ArrayList categorias;
+    private String categorias;
     private String autor;
+    
     
     public Filme(){};
 
@@ -50,11 +51,11 @@ public class Filme {
         this.sinopse = sinopse;
     }
 
-    public ArrayList getCategorias() {
+    public String getCategorias() {
         return categorias;
     }
 
-    public void setCategorias(ArrayList categorias) {
+    public void setCategorias(String categorias) {
         this.categorias = categorias;
     }
 

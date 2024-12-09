@@ -36,7 +36,8 @@ public class UsuarioController extends HttpServlet {
                    HttpSession session = request.getSession();
                    session.setAttribute("autenticado", true);
                    session.setAttribute("userLogged", userLogged);
-                              
+                   
+                   
                    response.sendRedirect("filmes.jsp");
                    
                } else {
